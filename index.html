@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#211b2b">
+    <meta name="description" content="Небольшое поздравление. Осторожно: много мемов.">
+    <title>Birthday.exe — праздничная система</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="js/observer.js" defer></script>
+    <script src="js/surprises.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- Стартовый экран. Его закрывает кнопка в main.js -->
+    <div class="intro-screen" id="introScreen">
+        <div class="intro-window">
+            <p class="eyebrow">Чат хпт сгенерируй мне сайт</p>
+            <div class="pixel-icon" aria-hidden="true">🎂</div>
+            <h1>Подарок на день рождения</h1>
+            <p class="muted">От самого крутого, умного и просто лучшего человека на Земле</p>
+            <div class="loading-track" aria-hidden="true"><span></span></div>
+            <button class="button button-primary" id="startButton" type="button">
+                Вроде кнопка
+            </button>
+            <p class="tiny-note">* При нажатии на кнопку вы подписываете контракт с Минобороны РФ и будете высланы на СВО</p>
+        </div>
+    </div>
+
+    <header class="hero" id="top">
+        <div class="hero-noise" aria-hidden="true"></div>
+        <div class="hero-content">
+            <p class="eyebrow reveal">ОФИЦИАЛЬНОЕ УВЕДОМЛЕНИЕ: На территории ХМАО-Югра Сургут ничего не произошло</p>
+            <p class="hero-sticker sticker-one" aria-hidden="true">👾</p>
+            <p class="hero-sticker sticker-two" aria-hidden="true">17 лет</p> 
+            <h1 class="hero-title reveal">С ДНЁМ<br><span>РОЖДЕНИЯ!</span></h1>
+            <p class="hero-subtitle reveal">
+                Поздравляем! Сегодня Пятница, а затра Суббота
+            </p>
+            <a class="button button-dark reveal" href="#feed">Начать просмотр ↓</a>
+            <p class="tiny-note reveal">Листайте вниз. А то зачем я это делал?</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section intro-message" id="greeting">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Это писал не я</p>
+                <h2>Сегодня особенный день.</h2>
+                <p>Поэтому обычное «с днём рождения» было признано недостаточно мощным.</p>
+            </div>
+            <div class="notice-card reveal">
+                <span class="notice-icon" aria-hidden="true">📢</span>
+                <div>
+                    <h3>ВНИМАНИЕ, ВАЖНОЕ ОБЪЯВЛЕНИЕ</h3>
+                    <p>Сегодня разрешается принимать поздравления, есть торт и временно игнорировать все жизненные дедлайны.</p>
+                    <p class="tiny-note">*Это тож писал не я</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section feed-section" id="feed">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Оч важна</p>
+                <h2>Лента важных событий</h2>
+                <p>Важно не, то что важно, а то что важно</p>
+            </div>
+
+                <div class="feed-grid">
+
+                    <article class="feed-card reveal">
+                        <span class="card-number">01 / ACHIEVEMENT</span>
+
+                        <img
+                            src="assets/photos/spirman.webp"
+                            alt="Человек-паук"
+                            width="1920"
+                        height="1080"
+                        loading="lazy"
+                        decoding="async"
+                        >
+
+                        <h3>Достижение разблокировано</h3>
+
+                        <p>
+                            Посмотреть человека паука. Теперь ты можешь уверенно сказать:
+                            «Эндрю лучший человек паук», а потом улететь на паутине.
+                        </p>
+                    </article>
+
+                    <article class="feed-card reveal">
+                        <span class="card-number">02 / STATISTICS</span>
+
+                        <img
+                            src="assets/photos/ia_xachy_bkysno_i_tochka.webp"
+                            alt="Мем про вкусную еду"
+                            width="900"
+                        height="900"
+                        loading="lazy"
+                        decoding="async"
+                        >
+
+                        <h3>Годовая статистика</h3>
+
+                        <p>
+                            За этот год было заказано осень многа вкусный и точна.
+                            Архитектор гордится вами
+                        </p>
+                    </article>
+
+                <article class="feed-card reveal">
+                    <span class="card-number">03 / PUBLIC OPINION</span>
+                        <img
+                            src="assets/photos/shunya.gif"
+                            alt="Е шунгуань жена"
+                            width="320"
+                        height="320"
+                        loading="lazy"
+                        decoding="async"
+                        >
+                    <h3>Экспертное заключение</h3>
+                    <p>
+                        Комиссия из Чата хпт, 2 моих полуживых нейронов и лоухай видео на 10 часов из ютуба решила:
+                        Ты красава, респект тебе и уважуха. И вечная класика: Счастья здоровья и всего самого наилучшего
+                    </p>  
+                </article>
+            </div>
+        </section>
+
+        <section class="section memes-section" id="memes">
+            <div class="section-heading reveal">
+                <p class="eyebrow">MEME DATABASE</p>
+                <h2>Коты</h2>
+                <p>Просто хачу</p>
+            </div>
+
+            <div class="media-grid">
+                <div class="media-placeholder reveal">
+                    <span class="placeholder-symbol">Как смотрит на меня стомотог, когда я съел все его приборы</span>
+                    <img
+                        src="assets/photos/1.webp"
+                        alt="Котэ номэр адын"
+                        width="736"
+                        height="747"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </div>
+                
+                <div class="media-placeholder reveal">
+                    <span class="placeholder-symbol">Это Серега</span>
+                    <img
+                        src="assets/photos/2.webp"
+                        alt="Котэ номэр двэ"
+                        width="735"
+                        height="748"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </div>
+
+                <div class="media-placeholder reveal">
+                    <span class="placeholder-symbol">О, Буггела</span>
+                    <img
+                    src="assets/photos/3.webp"
+                    alt="Котэ номэр фри"
+                    width="500"
+                        height="500"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </div>
+
+                <div class="media-placeholder reveal">
+                    <span class="placeholder-symbol">😲</span>
+                    <img
+                        src="assets/photos/4.webp"
+                        alt="Котэ номэр чатыре"
+                        width="695"
+                        height="700"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </div>
+
+                <div class="media-placeholder reveal">
+                    <span class="placeholder-symbol">хехехехех</span>
+                    <img
+                        src="assets/photos/5.webp"
+                        alt="Котэ номэр пять, пЪать"
+                        width="735"
+                        height="722"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </div>
+                
+                <div class="media-placeholder reveal">
+                    <span class="placeholder-symbol">👀</span>
+                    <img
+                        src="assets/photos/6.webp"
+                        alt="Котэ номэр sex"
+                        width="720"
+                        height="700"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </div>
+            </div>
+        </section>
+        
+        <section class="section photos-section" id="photos">
+            <div class="section-heading reveal">
+                <p class="eyebrow">CLASSIFIED PHOTO ARCHIVE</p>
+                <h2>Внезапный человек паук</h2>
+                <p>Даже сам человек паук пришел поздравить, это круто</p>
+            </div>
+            
+            <div class="photo-grid">
+                <img
+                src="assets/photos/cool_spider_man.webp"
+                alt="Крутой Питер Паркер 2009"
+                width="480"
+                        height="270"
+                        loading="lazy"
+                        decoding="async"
+                >
+                <p>
+                    ща будет смешно, если я имя не правильно написал
+                </p>
+            </div>
+        </section>
+
+        <section class="section certificate-section" id="certificate">
+            <div class="section-heading reveal">
+                <p class="eyebrow">OFFICIAL DOCUMENT</p>
+                <h2>И наконец — документ</h2>
+                <p>Супер мега крутой документ, который можно распечатать и повесить на холодильник и забыть</p>
+            </div>
+
+            <article class="certificate reveal">
+                <p class="certificate-top">✦ МИНИСТЕРСТВО ПОЗДРАВЛЕНИЯ БАНАНИИ ✦</p>
+                <p class="certificate-label">СЕРТИФИКАТ № 1000 - 7</p>
+                <h3>ЛЕГЕНДА ГОДА</h3>
+                <p>По настоящему подтверждается, что</p>
+                <p class="certificate-name"> Серафима Федулова</p>
+                <p>успешно прошла очередной год жизни и награждается:</p>
+                <ul>
+                    <li>бесконечным респектом от нашей команды (из одного человека);</li>
+                    <li>официальным разрешением на тройное заднее сальто;</li>
+                    <li>правом соблюдения конституции российской федерации (не, ну у меня уже идеи заканчиваются).</li>
+                </ul>
+                <div class="certificate-footer">
+                    <span>
+                        Главный по созданию сайта
+                        <b>Подпись: <i>Chat GPT</i></b>
+                    </span>
+
+                    <span>
+                        Самый прекрасный, умный, красивый, скромный и просто лучший человек на Земле
+                        <b>Подпись: <i>Denkcays</i></b>
+                    </span>
+
+                    <span>
+                        Не менее крутая именинница
+                        <b>Подпись: ____</b>
+                    </span>
+                </div>
+                <p class="certificate-disclaimer">* будет капец как смешно, если я еще раз ошибся в написании имени и фамилии</p>
+            </article>
+        </section>
+
+        <section class="section danger-section" id="danger">
+            <div class="danger-panel reveal">
+                <p class="eyebrow">FINAL SYSTEM CHECK</p>
+                <h2>На этом всё.</h2>
+                <p>Хотя... здесь осталась одна кнопка. Её действительно не стоит нажимать.</p>
+                <button class="button button-danger" id="dangerButton" type="button">
+                    НЕ НАЖИМАТЬ!!!
+                </button>
+                <p class="tiny-note">Мы предупредили. Ответственность за любопытство лежит на пользователе.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>MADE WITH HTML, CSS, JS AND QUESTIONABLE AMOUNTS OF COFFEE.</p>
+        <p>Birthday.exe · Version 1.0 · No computers were harmed.</p>
+        <a href="#top">Вернуться наверх ↑</a>
+    </footer>
+
+    <!-- Шуточное окно ошибки. Никакие системные файлы не затрагиваются. -->
+    <div class="error-overlay" id="errorOverlay" hidden>
+        <div class="error-window" role="dialog" aria-modal="true" aria-labelledby="errorTitle">
+            <div class="error-titlebar">
+                <span>Birthday.exe — System Error</span>
+                <button class="window-close" id="closeError" type="button" aria-label="Закрыть">×</button>
+            </div>
+            <div class="error-body">
+                <div class="error-icon" aria-hidden="true">⚠</div>
+                <div>
+                    <h2 id="errorTitle">КРИТИЧЕСКАЯ ОШИБКА</h2>
+                    <p>Обнаружена попытка нажать запрещённую кнопку.</p>
+                    <p class="error-code">ERROR 0x000PIVO</p>
+                    <p>System32 не найден. А вот Линукс, так бы не поступил</p>
+                </div>
+            </div>
+            <button class="button button-primary" id="restoreButton" type="button">
+                Попробовать восстановить систему
+            </button>
+        </div>
+    </div>
+</body>
+</html>

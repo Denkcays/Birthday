@@ -1,0 +1,31 @@
+/* Появление блоков при прокрутке. Класс .visible добавляет observer.js. */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1);
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* Небольшое движение стикеров в шапке. */
+.hero-sticker { animation: sticker-float 3.5s ease-in-out infinite alternate; }
+.sticker-two { animation-delay: .5s; }
+
+@keyframes loading {
+    from { transform: scaleX(.08); }
+    to { transform: scaleX(1); }
+}
+@keyframes sticker-float {
+    from { translate: 0 0; }
+    to { translate: 0 -10px; }
+}
+
+/* Если пользователь отключил анимации в системе — уважаем его выбор. */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+    .reveal { opacity: 1; transform: none; }
+}
